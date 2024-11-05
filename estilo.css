@@ -1,0 +1,192 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+/* Ajustes para o conteúdo principal */
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+/* Header fixado no topo */
+header {
+    background-color: #3498db;
+    color: #fff;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #34495e;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Botões */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 150px;
+}
+
+#buscar {
+    background-color: #3498db;
+}
+
+#gerar-pdf {
+    background-color: #e74c3c;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+/* Tabela de dados do clima */
+table {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #3498db;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f0f2f5;
+}
+
+table tbody tr:hover {
+    background-color: #dfe6e9;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    header, footer {
+        padding: 10px 0;
+    }
+
+    select, button {
+        width: 100%;
+        max-width: none;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    table, th, td {
+        font-size: 0.8em;
+    }
+
+    select, button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
